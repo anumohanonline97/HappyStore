@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: . 
+      dockerfile: ./Dockerfile
+    container_name: happystore_app  
+    volumes:
+      - .:/var/www/html
+      - ./php/php.ini:/usr/local/etc/php/php.ini
+    environment:
+      - PHP_EXTENSION=pdo_mysql
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_DATABASE=happystore
+      - DB_USERNAME=happystore_user
+      - DB_PASSWORD=happystore_user123
+    depends_on:
+      - mysql
+    networks:
+      - happystore_network  
+    restart: always
+
+  mysql:
+    image: mysql:8.0
+    container_name: happystore_db  
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: happystore
+      MYSQL_USER: happystore_user
+      MYSQL_PASSWORD: happystore_user123
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - happystore_network 
+    restart: always
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mysql
+    ports:
+      - "8085:80"
+    depends_on:
+      - mysql
+    networks:
+      - happystore_network  
+    restart: always
+
+  nginx:
+    image: nginx:alpine
+    container_name: happystore_nginx  
+    volumes:
+      - .:/var/www/html
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 8082:80
+    depends_on:
+      - app
+    networks:
+      - happystore_network  
+    restart: always
+
+volumes:
+  dbdata:
+
+networks:
+  happystore_network:  
+    driver: bridge

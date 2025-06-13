@@ -399,7 +399,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="clearfix"></div>
             </div>
             <div class="mobile-search hidden-large">
                     <div class="search-box-mobile">

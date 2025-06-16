@@ -267,15 +267,34 @@ a
 {
   align-items: center;
 }
-.main-header header::before 
+.header-strip 
 {
-  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 7px;
-  background: #000;
+  height: 25px;
+  background: #F6F1D5;
+}
+.strip-text
+{
+  font-size:10px;
+  margin-right:10px;
+}
+.logo-font-weight
+{
+  font-weight: 800;
+}
+.row-style
+{
+  display: inline-block;
+  width: 100%;
+  margin: 0px auto;
+  color: rgb(255, 255, 255);
+}
+.mt-25
+{
+  margin-top:25px;
 }
 .main-header header
 {
@@ -6311,7 +6330,7 @@ button:focus
 
 .main--wrapper
 {
-  margin-top: 132px;
+  margin-top: 160px;
 }
 
 .horizontal-tab-container ul li  

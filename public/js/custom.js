@@ -7,6 +7,7 @@ $(document).ready(function(){
         autoplaySpeed: 1000,
         slidesToShow: 1,
         dots: true,
+        infinite: false,
         pauseOnHover: true,
         arrows: false,
         centerMode: false,
@@ -65,6 +66,7 @@ $(document).ready(function(){
         autoplaySpeed: 1000,
         slidesToShow: 1,
         dots: true,
+        infinite: false,
         pauseOnHover: true,
         arrows: false,
         centerMode: false,
@@ -143,6 +145,7 @@ $(document).ready(function(){
       slidesToShow: 5,
       infinite: false,
       dots:true,
+      infinite: false,
       slidesToScroll: 3,
       pauseOnHover: true,
       centerMode: false,
@@ -304,6 +307,7 @@ $(document).ready(function($){
     margin:20,
     nav : false,
     dots: true,
+    infinite: false,
     responsiveClass:true,
     autoplay: true,
     autoplayTimeout:4000,
@@ -364,6 +368,7 @@ $(document).ready(function(){
   $('#new-arrival1,#top-sailing,#trending-items,#carousel-latest').slick({
   slidesToShow: 4,
   dots:true,
+  infinite: false,
   centerMode: false,
   dots: true,
   nav: false,
@@ -388,9 +393,239 @@ $(document).ready(function(){
       }
     ]
   });
+  
+  $('#carousel-membership').slick({
+  slidesToShow: 4,
+  centerMode: false,
+  dots: true,
+  infinite: false,
+  arrows: true,
+  infinite: false,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 479,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+});
+
+ $('#markdowns').slick({
+  slidesToShow: 4,
+  centerMode: false,
+  dots: true,
+  arrows: true,
+  infinite: false,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 479,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+});
+
+ $('#sharp-dressing').slick({
+  slidesToShow: 4,
+  centerMode: false,
+  dots: true,
+  arrows: true,
+  infinite: false,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 479,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+});
+
+ $('#denim-makeover').slick({
+  slidesToShow: 4,
+  centerMode: false,
+  dots: false,
+  arrows: true,
+  infinite: false,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 479,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+});
+
+ $('#top-picks').slick({
+  slidesToShow: 4,
+  centerMode: false,
+  dots: false,
+  arrows: true,
+  infinite: false,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 479,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+});
+
+$('#shop-fandom').slick({
+  slidesToShow: 4,
+  centerMode: false,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  dots: true,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 479,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+});
+
+$('#testimonial').slick({
+  slidesToShow: 4,
+  centerMode: false,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  dots: true,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 479,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+});
+
+$('#shop-by-fandom').slick({
+  slidesToShow: 3,
+  centerMode: false,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  dots: true,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 5,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 479,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+});
+
   $('#trends').slick({
   slidesToShow: 5,
   dots:true,
+  infinite: false,
   centerMode: false,
   dots: false,
   nav: false,
@@ -409,6 +644,7 @@ $(document).ready(function(){
       }
     ]
   });
+
   $('#category-slider, #category-slider1').slick({
     autoplay: true,
     autoplaySpeed: 1000,
@@ -436,6 +672,7 @@ $(document).ready(function(){
   $('.carousel').slick({
   slidesToShow: 1,
   dots:false,
+  infinite: false,
   centerMode: false,
   dots: false,
   autoplay: false,
@@ -517,6 +754,7 @@ $(document).ready(function(){
     margin:20,
     nav : false,
     dots: false,
+    infinite: false,
     navText : ["<i class='fas fa-caret-left arrow'></i>","<i class='fas fa-caret-right arrow'></i>"],
     responsiveClass:true,
     autoplay: true,
@@ -542,6 +780,7 @@ $(document).ready(function(){
     margin:20,
     nav : false,
     dots: false,
+    infinite: false,
     navText : ["<i class='fas fa-caret-left arrow'></i>","<i class='fas fa-caret-right arrow'></i>"],
     responsiveClass:true,
     autoplay: true,
@@ -567,6 +806,7 @@ $(document).ready(function(){
     margin:20,
     nav : false,
     dots: true,
+    infinite: false,
     navText : ["<i class='fa fa-chevron-left arrow'></i>","<i class='fa fa-chevron-right arrow'></i>"],
     responsiveClass:true,
     autoplay: false,
@@ -598,6 +838,7 @@ $(document).ready(function(){
     margin:20,
     nav : false,
     dots: true,
+    infinite: false,
     responsiveClass:true,
     autoplay: false,
     autoplayTimeout:4000,
@@ -618,6 +859,7 @@ $(document).ready(function(){
     margin:20,
     nav : false,
     dots: true,
+    infinite: false,
     responsiveClass:true,
     autoplay: false,
     autoplayTimeout:4000,
@@ -647,6 +889,7 @@ $(document).ready(function(){
   $('#new-arrival1,#top-sailing,#trending-items,#carousel-latest').slick({
   slidesToShow: 4,
   dots:true,
+  infinite: false,
   centerMode: false,
   dots: true,
   nav: false,
@@ -674,6 +917,7 @@ $(document).ready(function(){
   $('#trends').slick({
   slidesToShow: 5,
   dots:true,
+  infinite: false,
   centerMode: false,
   dots: false,
   nav: false,
@@ -697,6 +941,7 @@ $(document).ready(function(){
     autoplaySpeed: 1000,
     slidesToShow: 3,
     dots:false,
+    infinite: false,
     centerMode: false,
     dots: false,
     nav: false,
@@ -772,6 +1017,7 @@ $(document).ready(function(){
     margin:20,
     nav : false,
     dots: false,
+    infinite: false,
     navText : ["<i class='fas fa-caret-left arrow'></i>","<i class='fas fa-caret-right arrow'></i>"],
     responsiveClass:true,
     autoplay: false,
@@ -836,6 +1082,7 @@ $(document).ready(function(){
     margin:20,
     nav : false,
     dots: false,
+    infinite: false,
     navText : ["<i class='fas fa-caret-left arrow'></i>","<i class='fas fa-caret-right arrow'></i>"],
     responsiveClass:true,
     autoplay: true,
@@ -861,6 +1108,7 @@ $(document).ready(function(){
     margin:20,
     nav : false,
     dots: false,
+    infinite: false,
     navText : ["<i class='fas fa-caret-left arrow'></i>","<i class='fas fa-caret-right arrow'></i>"],
     responsiveClass:true,
     autoplay: true,
@@ -961,6 +1209,7 @@ $(document).ready(function () {
     margin:20,
     nav : false,
     dots: true,
+    infinite: false,
     responsiveClass:true,
     autoplay: false,
     autoplayTimeout:4000,
@@ -994,6 +1243,7 @@ $(document).ready(function () {
     margin:20,
     nav : false,
     dots: true,
+    infinite: false,
     responsiveClass:true,
     autoplay: false,
     autoplayTimeout:4000,

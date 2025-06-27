@@ -626,7 +626,7 @@
             </div>
         </div> -->
         <section class="slider-banner">
-            <div class="banner-wrapper">
+            <div class="banner-container">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide" onclick="location.href='product.html'">
@@ -656,26 +656,20 @@
             </div>
         </section>
 
-        <section class="product-slider-section mt-50 mb-20">
+        <section class="product-slider-section mt-50 mb-30">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-xs-12">
                         <div class="heading-txt align-items-center mb-20">
                             <h3 class="fw-700 text-uppercase text-center">New Arrivals</h3>
                         </div>
 
-                        <!-- Swiper Container -->
-                        <div class="swiper product-swiper position-relative">
+                        <div class="swiper product-swiper">
                             <div class="swiper-wrapper">
                                 @for($i = 0; $i < 15; $i++)
-                                    <div class="swiper-slide">
-                                    <div class="product-card">
+                                <div class="swiper-slide">
+                                    <div class="product-card p-2">
                                         <div class="card">
-                                            <div class="d-flex product-badge">
-                                                <div class="d-flex align-items-center badge-background">
-                                                    <span class="badge-text"> BUY 2 FOR 999</span>
-                                                </div>
-                                            </div>
                                             <img src="images/f1.webp" class="card-img-top" alt="Product {{ $i + 1 }}">
                                             <div class="product-detail p-2">
                                                 <div class="d-flex justify-content-between">
@@ -687,65 +681,53 @@
                                                         <i class="fa-regular fa-heart"></i>
                                                     </div>
                                                 </div>
-                                                <p class="item-price">
-                                                    <span class="offer_price_number">₹599</span>
-                                                    <span class="price_number">₹1599</span>
-                                                    <span class="offer">66% OFF</span>
-                                                </p>
+                                                <p class="item-price"><span class="offer_price_number">₹599</span><span class="price_number">₹1599</span><span class="offer">66% OFF</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                              </div>
+                            <div class="swiper-slide">
+                                    <div class="product-card p-2">
+                                        <div class="card">
+                                            <img src="images/f2.webp" class="card-img-top" alt="Product {{ $i + 1 }}">
+                                            <div class="product-detail p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <h3 class="product-title fw-700">DeLuneh@ {{ $i + 1 }}</h3>
+                                                        <p class="item-name">Men's Fog Green Things Typography Oversized T-shirt</p>
+                                                    </div>
+                                                    <div class="wishlist-icon">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <p class="item-price"><span class="offer_price_number">₹599</span><span class="price_number">₹1599</span><span class="offer">66% OFF</span></p>
                                             </div>
                                         </div>
                                     </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="product-card">
-                                    <div class="card">
-                                        <img src="images/f2.webp" class="card-img-top" alt="Product {{ $i + 1 }}">
-                                        <div class="product-detail p-2">
-                                            <div class="d-flex justify-content-between">
-                                                <div>
-                                                    <h3 class="product-title fw-700">DeLuneh@ {{ $i + 1 }}</h3>
-                                                    <p class="item-name">Men's Fog Green Things Typography Oversized T-shirt</p>
+                                    <div class="product-card p-2">
+                                        <div class="card">
+                                            <img src="images/f3.webp" class="card-img-top" alt="Product {{ $i + 1 }}">
+                                            <div class="product-detail p-2">
+                                                <div class="d-flex justify-content-between">
+                                                    <div>
+                                                        <h3 class="product-title fw-700">DeLuneh@ {{ $i + 1 }}</h3>
+                                                        <p class="item-name">Men's Fog Green Things Typography Oversized T-shirt</p>
+                                                    </div>
+                                                    <div class="wishlist-icon">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </div>
                                                 </div>
-                                                <div class="wishlist-icon">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </div>
+                                                <p class="item-price"><span class="offer_price_number">₹599</span><span class="price_number">₹1599</span><span class="offer">66% OFF</span></p>
                                             </div>
-                                            <p class="item-price">
-                                                <span class="offer_price_number">₹599</span>
-                                                <span class="price_number">₹1599</span>
-                                                <span class="offer">66% OFF</span>
-                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <div class="card">
-                                        <img src="images/f3.webp" class="card-img-top" alt="Product {{ $i + 1 }}">
-                                        <div class="product-detail p-2">
-                                            <div class="d-flex justify-content-between">
-                                                <div>
-                                                    <h3 class="product-title fw-700">DeLuneh@ {{ $i + 1 }}</h3>
-                                                    <p class="item-name">Men's Fog Green Things Typography Oversized T-shirt</p>
-                                                </div>
-                                                <div class="wishlist-icon">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </div>
-                                            </div>
-                                            <p class="item-price">
-                                                <span class="offer_price_number">₹599</span>
-                                                <span class="price_number">₹1599</span>
-                                                <span class="offer">66% OFF</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             @endfor
                         </div>
 
-                        <!-- Navigation Buttons -->
+                        <!-- Unique navigation classes -->
                         <div class="swiper-button-custom product-button-prev"><i class="fa fa-chevron-left"></i></div>
                         <div class="swiper-button-custom product-button-next"><i class="fa fa-chevron-right"></i></div>
                     </div>
@@ -754,170 +736,11 @@
             </div>
         </section>
 
-        <section class="categories section-block p-contain pt-30 mob-padding">
-            <div class="container-fluid container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">Categories</h3>
-                </div>
-                <div class="row mt-30">
-                    <div class="col-md-3">
-                        <img src="images/category7.webp" class="card-img-top">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/category2.webp" class="card-img-top">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/category3.webp" class="card-img-top">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/category8.webp" class="card-img-top">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="images/category5.webp" class="card-img-top">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/category6.webp" class="card-img-top">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/category1.webp" class="card-img-top">
-                    </div>
-                    <div class="col-md-3">
-                        <img src="images/category4.webp" class="card-img-top">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="highlated-sale top-highlated">
-            <div class="container">
-                <div class="row">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <p class="home-strip-text">HOMEGROWN INDIAN BRAND</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Shop by fandom -->
-        <section class="categories section-block p-contain mob-padding">
-            <div class="container-fluid  container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">Shop By Fandom</h3>
-                </div>
-                <div class="category-row">
-                    <div class="row carousel1" id="shop-fandom">
-                        <div class="col-md-4 col-lg-4">
-                            <div class="category-item">
-                                <div class="category-image">
-                                    <img src="images/fandom1.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="category-item">
-                                <div class="category-image">
-                                    <img src="images/fandom2.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="category-item">
-                                <div class="category-image">
-                                    <img src="images/fandom3.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="category-item">
-                                <div class="category-image">
-                                    <img src="images/fandom4.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="category-item">
-                                <div class="category-image">
-                                    <img src="images/fandom5.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="category-item">
-                                <div class="category-image">
-                                    <img src="images/fandom6.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- end -->
-
-        <!-- Shop by fandom -->
-        <section class="categories section-block p-contain mob-padding">
-            <div class="container-fluid  container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">Shop By Fandom</h3>
-                </div>
-                <div class="category-row">
-                    <div class="row carousel1" id="shop-by-fandom">
-                        <div class="col-md-4 col-lg-4">
-                            <div class="category-item">
-                                <div class="category-image">
-                                    <img src="images/fandom1.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="category-item">
-                                <div class="category-image">
-                                    <img src="images/fandom2.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="category-item">
-                                <div class="category-image">
-                                    <img src="images/fandom3.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="category-item">
-                                <div class="category-image">
-                                    <img src="images/fandom4.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="category-item">
-                                <div class="category-image">
-                                    <img src="images/fandom5.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="category-item">
-                                <div class="category-image">
-                                    <img src="images/fandom6.webp" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- end -->
-
         <section class="new-arrivals section-block p-contain mob-padding">
-            <div class="container-fluid container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
+            <div class="container-fluid">
+                <div class="heading-txt d-flex align-items-center justify-content-between mb-20 text-left">
                     <h3 class="fw-700 text-uppercase text-center">Featured Products</h3>
+                    <a href="" class="see_all">See All</a>
                 </div>
                 <div class="post-row">
                     <div class="row carousel1" id="new-arrival1">
@@ -929,7 +752,7 @@
                                             <source src="https://happenstance.com/storage/media/erhWknKJC8nOXn0698wxGDKlRVOmWVc3eDyuZilP.mp4" type="video/mp4">
                                         </video>
                                     </div>
-                                    <!-- <div class="product-detail">
+                                    <div class="product-detail">
                                         <h3 class="product-titile fw-700">TSS Originals: Blue Bonnet Ombre (Utility)</h3>
                                         <div class="product-features">
                                             <p class="item-name">T-Shirt</p>
@@ -939,7 +762,7 @@
                                             </p>
                                             <p class="inclusive"><span class="item-sm-para">MRP incl. of all taxes</span></p>
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -949,7 +772,7 @@
                                     <div class="product-image round-corner">
                                         <img src="images/i1.jpg" class="img-fluid" alt="">
                                     </div>
-                                    <!-- <div class="product-detail">
+                                    <div class="product-detail">
                                         <h3 class="product-titile fw-700">TSS Originals: Blue Bonnet Ombre (Utility)</h3>
                                         <div class="product-features">
                                             <p class="item-name">T-Shirt</p>
@@ -959,7 +782,7 @@
                                             </p>
                                             <p class="inclusive"><span class="item-sm-para">MRP incl. of all taxes</span></p>
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -969,7 +792,7 @@
                                     <div class="product-image round-corner">
                                         <img src="images/i2.jpg" class="img-fluid" alt="">
                                     </div>
-                                    <!-- <div class="product-detail">
+                                    <div class="product-detail">
                                         <h3 class="product-titile fw-700">TSS Originals: Blue Bonnet Ombre (Utility)</h3>
                                         <div class="product-features">
                                             <p class="item-name">T-Shirt</p>
@@ -979,7 +802,7 @@
                                             </p>
                                             <p class="inclusive"><span class="item-sm-para">MRP incl. of all taxes</span></p>
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -991,7 +814,7 @@
                                             <source src="https://happenstance.com/storage/media/lBtvd2EYBeNJjhVL7VqYnnamiEmNW7FIzo3Ooh2y.mp4" type="video/mp4">
                                         </video>
                                     </div>
-                                    <!-- <div class="product-detail">
+                                    <div class="product-detail">
                                         <h3 class="product-titile fw-700">TSS Originals: Blue Bonnet Ombre (Utility)</h3>
                                         <div class="product-features">
                                             <p class="item-name">T-Shirt</p>
@@ -1001,7 +824,7 @@
                                             </p>
                                             <p class="inclusive"><span class="item-sm-para">MRP incl. of all taxes</span></p>
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -1011,7 +834,7 @@
                                     <div class="product-image round-corner">
                                         <img src="images/i4.jpg" class="img-fluid" alt="">
                                     </div>
-                                    <!-- <div class="product-detail">
+                                    <div class="product-detail">
                                         <h3 class="product-titile fw-700">TSS Originals: Blue Bonnet Ombre (Utility)</h3>
                                         <div class="product-features">
                                             <p class="item-name">T-Shirt</p>
@@ -1021,85 +844,6 @@
                                             </p>
                                             <p class="inclusive"><span class="item-sm-para">MRP incl. of all taxes</span></p>
                                         </div>
-                                    </div> -->
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="heading-txt d-flex align-items-center justify-content-center mt-10 text-left">
-                    <a href="#" class="see_all">Explore All</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Styles in Spotlight -->
-        <section class="new-arrivals section-block p-contain mob-padding">
-            <div class="container-fluid  container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">Shop By Fandom</h3>
-                </div>
-                <div class="post-row">
-                    <div class="row carousel1" id="new-arrival1">
-                        <div class="col-md-4">
-                            <a href="product.html">
-                                <div class="product-post">
-                                    <div class="product-image">
-                                        <img src="images/spot1.webp" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="product.html">
-                                <div class="product-post">
-                                    <div class="product-image">
-                                        <img src="images/spot2.webp" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="product.html">
-                                <div class="product-post">
-                                    <div class="product-image">
-                                        <img src="images/spot3.webp" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="product.html">
-                                <div class="product-post">
-                                    <div class="product-image">
-                                        <img src="images/spot4.webp" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="product.html">
-                                <div class="product-post">
-                                    <div class="product-image">
-                                        <img src="images/spot1.webp" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="product.html">
-                                <div class="product-post">
-                                    <div class="product-image">
-                                        <img src="images/spot2.webp" class="img-fluid" alt="">
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="product.html">
-                                <div class="product-post">
-                                    <div class="product-image">
-                                        <img src="images/spot3.webp" class="img-fluid" alt="">
                                     </div>
                                 </div>
                             </a>
@@ -1108,10 +852,9 @@
                 </div>
             </div>
         </section>
-        <!-- end -->
 
         <section class="categories section-block p-contain pt-0 mob-padding">
-            <div class="container-fluid  container-wrapper">
+            <div class="container-fluid">
                 <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
                     <h3 class="fw-700 text-uppercase">Categories</h3>
                 </div>
@@ -1331,168 +1074,13 @@
             </div>
         </section>
 
-        <section class="product-slider-section highlated-sale-strip mt-50 mb-20">
+
+
+        <section class="latest-collection section-block mob-padding p-contain pt-0">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="d-flex heading-txt align-items-center justify-content-center flex-wrap gap-2 mb-20 mt-25">
-                            <h3 class="fw-700 text-uppercase text-center">HOT PICKS:OVERSIZED T-SHIRTS AT RS.499</h3>
-                            <img src="images/img-strip.webp" class="img-fluid" alt="">
-                        </div>
-
-                        <!-- Swiper Container -->
-                        <div class="swiper product-swiper position-relative">
-                            <div class="swiper-wrapper">
-                                @for($i = 0; $i < 15; $i++)
-                                    <div class="swiper-slide">
-                                    <div class="product-card">
-                                        <div class="card">
-                                            <div class="d-flex product-badge">
-                                                <div class="d-flex align-items-center badge-background">
-                                                    <span class="badge-text"> BUY 2 FOR 999</span>
-                                                </div>
-                                            </div>
-                                            <img src="images/f1.webp" class="card-img-top" alt="Product {{ $i + 1 }}">
-                                            <div class="product-detail p-2">
-                                                <div class="d-flex justify-content-between">
-                                                    <div>
-                                                        <h3 class="product-title fw-700">DeLuneh@ {{ $i + 1 }}</h3>
-                                                        <p class="item-name">Men's Fog Green Things Typography Oversized T-shirt</p>
-                                                    </div>
-                                                    <div class="wishlist-icon">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </div>
-                                                </div>
-                                                <p class="item-price">
-                                                    <span class="offer_price_number">₹599</span>
-                                                    <span class="price_number">₹1599</span>
-                                                    <span class="offer">66% OFF</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <div class="card">
-                                        <img src="images/f2.webp" class="card-img-top" alt="Product {{ $i + 1 }}">
-                                        <div class="product-detail p-2">
-                                            <div class="d-flex justify-content-between">
-                                                <div>
-                                                    <h3 class="product-title fw-700">DeLuneh@ {{ $i + 1 }}</h3>
-                                                    <p class="item-name">Men's Fog Green Things Typography Oversized T-shirt</p>
-                                                </div>
-                                                <div class="wishlist-icon">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </div>
-                                            </div>
-                                            <p class="item-price">
-                                                <span class="offer_price_number">₹599</span>
-                                                <span class="price_number">₹1599</span>
-                                                <span class="offer">66% OFF</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="product-card">
-                                    <div class="card">
-                                        <img src="images/f3.webp" class="card-img-top" alt="Product {{ $i + 1 }}">
-                                        <div class="product-detail p-2">
-                                            <div class="d-flex justify-content-between">
-                                                <div>
-                                                    <h3 class="product-title fw-700">DeLuneh@ {{ $i + 1 }}</h3>
-                                                    <p class="item-name">Men's Fog Green Things Typography Oversized T-shirt</p>
-                                                </div>
-                                                <div class="wishlist-icon">
-                                                    <i class="fa-regular fa-heart"></i>
-                                                </div>
-                                            </div>
-                                            <p class="item-price">
-                                                <span class="offer_price_number">₹599</span>
-                                                <span class="price_number">₹1599</span>
-                                                <span class="offer">66% OFF</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            @endfor
-                        </div>
-
-                        <!-- Navigation Buttons -->
-                        <div class="swiper-button-custom product-button-prev"><i class="fa fa-chevron-left"></i></div>
-                        <div class="swiper-button-custom product-button-next"><i class="fa fa-chevron-right"></i></div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <section class="latest-collection section-block mob-padding p-contain">
-            <div class="container-fluid container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">Membership Perks</h3>
-                </div>
-                <div class="latest-collection-row">
-                    <div class="row carousel2" id="carousel-membership">
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/member1.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/member2.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/member3.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/member4.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/member5.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/member6.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="latest-collection section-block mob-padding p-contain pt-0">
-            <div class="container-fluid container-wrapper p-0">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">🎉 Big Sale Ends In</h3>
-                </div>
-                <div class="d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="see_all text-danger" id="countdown"></h3>
-                </div>
-            </div>
-        </section>
-
-        <section class="latest-collection section-block mob-padding p-contain pt-0">
-            <div class="container-fluid container-wrapper p-0">
-                <img src="images/offerbanner.webp" class="img-fluid" alt="">
-            </div>
-        </section>
-
-        <section class="latest-collection section-block mob-padding p-contain">
-            <div class="container-fluid container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
+                <div class="heading-txt d-flex align-items-center justify-content-between mb-20 text-left">
                     <h3 class="fw-700 text-uppercase">Latest Collection</h3>
+                    <a href="" class="see_all">See All</a>
                 </div>
                 <div class="latest-collection-row">
                     <div class="row carousel1" id="carousel-latest">
@@ -1528,481 +1116,36 @@
                         </div>
                     </div>
                 </div>
-                <div class="heading-txt d-flex align-items-center justify-content-center mt-10 text-left">
-                    <a href="#" class="see_all">Explore All</a>
-                </div>
             </div>
         </section>
 
-        <section class="latest-collection section-block mob-padding p-contain">
-            <div class="container-fluid container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">Markdowns</h3>
-                </div>
-                <div class="latest-collection-row">
-                    <div class="row carousel2" id="markdowns">
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/mark1.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/mark2.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/mark3.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/mark4.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/mark1.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/mark2.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="highlated-sale-moon top-highlated">
+        <section class="highlated-sale  mid-heighlated">
             <div class="container">
-                <div class="row">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <p class="home-strip-text">HOMEGROWN INDIAN BRAND</p>
+                <div class="row owl-carousel" id="mid-top-carousel-off">
+                    <div class="sale-content d-flex align-items-center justify-content-center">
+                        <p>SALE</p>
+                        <div class="discount text-uppercase">Up to 60% off</div>
+                        <a href="" class="text-uppercase">Shop Now</a>
                     </div>
-                </div>
-            </div>
-        </div>
-
-        <section class="latest-collection section-block mob-padding p-contain">
-            <div class="container-fluid container-wrapper">
-                <div class="d-flex heading-txt align-items-center justify-content-center flex-wrap gap-2 mb-20 mt-25">
-                    <img src="images/img-strip.webp" class="img-fluid" alt="">
-                    <h3 class="fw-700 text-uppercase text-center">Seasonal must haves</h3>
-                    <img src="images/img-strip.webp" class="img-fluid" alt="">
-                </div>
-                <div class="latest-collection-row">
-                    <div class="row">
-                        <div class="col-md-2 col-lg-2">
-                            <div class="Latest-item">
-                                <img src="images/season1.webp" class="img-fluid" alt="">
-                                <div class="product-detail p-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="product-title fw-700 text-uppercase">Oversized T-shirts</h3>
-                                            <p class="item-name">Start at ₹499</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-lg-2">
-                            <div class="Latest-item">
-                                <img src="images/season2.webp" class="img-fluid" alt="">
-                                <div class="product-detail p-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="product-title fw-700 text-uppercase">Joggers</h3>
-                                            <p class="item-name">Start at ₹499</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-lg-2">
-                            <div class="Latest-item">
-                                <img src="images/season3.webp" class="img-fluid" alt="">
-                                <div class="product-detail p-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="product-title fw-700 text-uppercase">Shorts</h3>
-                                            <p class="item-name">Start at ₹499</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-lg-2">
-                            <div class="Latest-item">
-                                <img src="images/season4.webp" class="img-fluid" alt="">
-                                <div class="product-detail p-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="product-title fw-700 text-uppercase">Pyjamas</h3>
-                                            <p class="item-name">Start at ₹499</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-lg-2">
-                            <div class="Latest-item">
-                                <img src="images/season5.webp" class="img-fluid" alt="">
-                                <div class="product-detail p-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="product-title fw-700 text-uppercase">Jeans</h3>
-                                            <p class="item-name">Start at ₹499</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-lg-2">
-                            <div class="Latest-item">
-                                <img src="images/season6.webp" class="img-fluid" alt="">
-                                <div class="product-detail p-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="product-title fw-700 text-uppercase">Vests</h3>
-                                            <p class="item-name">Start at ₹499</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="sale-content d-flex align-items-center justify-content-center">
+                        <p>SALE</p>
+                        <div class="discount text-uppercase">Up to 50% off</div>
+                        <a href="" class="text-uppercase">Shop Now</a>
+                    </div>
+                    <div class="sale-content d-flex align-items-center justify-content-center">
+                        <p>SALE</p>
+                        <div class="discount text-uppercase">Up to 30% off</div>
+                        <a href="" class="text-uppercase">Shop Now</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="highlated-sale top-highlated">
-            <div class="container">
-                <div class="row">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <p class="home-strip-text">HOMEGROWN INDIAN BRAND</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section class="latest-collection section-block mob-padding p-contain">
-            <div class="container-fluid container-wrapper">
-                <div class="d-flex heading-txt align-items-center justify-content-center flex-wrap gap-2 mb-20 mt-25">
-                    <img src="images/img-strip.webp" class="img-fluid" alt="">
-                    <h3 class="fw-700 text-uppercase text-center">Steal worthy deals</h3>
-                    <img src="images/img-strip.webp" class="img-fluid" alt="">
-                </div>
-                <div class="latest-collection-row">
-                    <div class="row mb-20">
-                        <div class="col-md-2 col-lg-2">
-                            <div class="Latest-item">
-                                <img src="images/season1.webp" class="img-fluid" alt="">
-                                <div class="product-detail p-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="product-title fw-700 text-uppercase">Oversized T-shirts</h3>
-                                            <p class="item-name">Start at ₹499</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-lg-2">
-                            <div class="Latest-item">
-                                <img src="images/season2.webp" class="img-fluid" alt="">
-                                <div class="product-detail p-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="product-title fw-700 text-uppercase">Joggers</h3>
-                                            <p class="item-name">Start at ₹499</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-lg-2">
-                            <div class="Latest-item">
-                                <img src="images/season3.webp" class="img-fluid" alt="">
-                                <div class="product-detail p-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="product-title fw-700 text-uppercase">Shorts</h3>
-                                            <p class="item-name">Start at ₹499</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-lg-2">
-                            <div class="Latest-item">
-                                <img src="images/season4.webp" class="img-fluid" alt="">
-                                <div class="product-detail p-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="product-title fw-700 text-uppercase">Pyjamas</h3>
-                                            <p class="item-name">Start at ₹499</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-lg-2">
-                            <div class="Latest-item">
-                                <img src="images/season5.webp" class="img-fluid" alt="">
-                                <div class="product-detail p-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="product-title fw-700 text-uppercase">Jeans</h3>
-                                            <p class="item-name">Start at ₹499</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-2 col-lg-2">
-                            <div class="Latest-item">
-                                <img src="images/season6.webp" class="img-fluid" alt="">
-                                <div class="product-detail p-2">
-                                    <div class="d-flex justify-content-between">
-                                        <div>
-                                            <h3 class="product-title fw-700 text-uppercase">Vests</h3>
-                                            <p class="item-name">Start at ₹499</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-2 col-lg-2">
-                        <div class="Latest-item">
-                            <img src="images/season1.webp" class="img-fluid" alt="">
-                            <div class="product-detail p-2">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h3 class="product-title fw-700 text-uppercase">Oversized T-shirts</h3>
-                                        <p class="item-name">Start at ₹499</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-lg-2">
-                        <div class="Latest-item">
-                            <img src="images/season2.webp" class="img-fluid" alt="">
-                            <div class="product-detail p-2">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h3 class="product-title fw-700 text-uppercase">Joggers</h3>
-                                        <p class="item-name">Start at ₹499</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-lg-2">
-                        <div class="Latest-item">
-                            <img src="images/season3.webp" class="img-fluid" alt="">
-                            <div class="product-detail p-2">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h3 class="product-title fw-700 text-uppercase">Shorts</h3>
-                                        <p class="item-name">Start at ₹499</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-lg-2">
-                        <div class="Latest-item">
-                            <img src="images/season4.webp" class="img-fluid" alt="">
-                            <div class="product-detail p-2">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h3 class="product-title fw-700 text-uppercase">Pyjamas</h3>
-                                        <p class="item-name">Start at ₹499</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-lg-2">
-                        <div class="Latest-item">
-                            <img src="images/season5.webp" class="img-fluid" alt="">
-                            <div class="product-detail p-2">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h3 class="product-title fw-700 text-uppercase">Jeans</h3>
-                                        <p class="item-name">Start at ₹499</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-lg-2">
-                        <div class="Latest-item">
-                            <img src="images/season6.webp" class="img-fluid" alt="">
-                            <div class="product-detail p-2">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        <h3 class="product-title fw-700 text-uppercase">Vests</h3>
-                                        <p class="item-name">Start at ₹499</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <section class="latest-collection section-block mob-padding p-contain">
-            <div class="container-fluid container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">Sharp dressing</h3>
-                </div>
-                <div class="latest-collection-row">
-                    <div class="row carousel2" id="sharp-dressing">
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/category1.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/category3.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/category2.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/category1.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/category3.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/category2.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="latest-collection section-block mob-padding p-contain">
-            <div class="container-fluid container-wrapper">
-                <div class="d-flex heading-txt align-items-center justify-content-center flex-wrap gap-2 mb-20 mt-25">
-                    <h3 class="fw-700 text-uppercase text-center">Categories</h3>
-                </div>
-                <div class="latest-collection-row">
-                    <div class="row mb-20">
-                        <div class="col-md-3 col-lg-3">
-                            <div class="Latest-item">
-                                <img src="images/cat1.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-lg-3">
-                            <div class="Latest-item">
-                                <img src="images/cat2.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-lg-3">
-                            <div class="Latest-item">
-                                <img src="images/cat3.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-lg-3">
-                            <div class="Latest-item">
-                                <img src="images/cat4.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
-            <div class="row mb-20">
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat5.webp" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat6.webp" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat7.webp" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat7.webp" class="img-fluid" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat9.webp" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat10.webp" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat11.webp" class="img-fluid" alt="">
-                    </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat12.webp" class="img-fluid" alt="">
-                    </div>
-                </div>
-            </div>
-            </div>
-            </div>
-        </section>
-
-        <section class="latest-collection section-block mob-padding p-contain pt-0">
+        <section class="trending-items mob-padding section-block p-contain p-0">
             <div class="container-fluid">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">Denim Takeover</h3>
-                </div>
-
-                <div class="latest-collection-row">
-                    <div class="row g-0">
-                        <div class="col-6">
-                            <img src="images/denim1.webp" class="img-fluid" alt="">
-                        </div>
-                        <div class="col-6">
-                            <img src="images/denim2.webp" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="trending-items mob-padding section-block p-contain">
-            <div class="container-fluid container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
+                <div class="heading-txt d-flex align-items-center justify-content-between mb-20 text-left">
                     <h3 class="fw-700 text-uppercase">Trending Now</h3>
+                    <a href="" class="see_all">See All</a>
                 </div>
                 <div class="post-row">
                     <div class="row carousel1" id="trending-items">
@@ -2144,116 +1287,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="heading-txt d-flex align-items-center justify-content-center mt-10 text-left">
-                    <a href="#" class="see_all">Explore All</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="latest-collection section-block mob-padding p-contain">
-            <div class="container-fluid container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">Denim Makeover</h3>
-                </div>
-                <div class="latest-collection-row">
-                    <div class="row carousel2" id="denim-makeover">
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/denim3.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/denim4.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/denim5.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/denim3.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/denim4.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/denim5.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="latest-collection section-block mob-padding p-contain pt-0">
-            <div class="container-fluid container-wrapper p-0">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">Why Choose Us?</h3>
-                </div>
-
-                <div class="latest-collection-row">
-                    <div class="row">
-                        <div class="col-12">
-                            <img src="images/choose.webp" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="latest-collection section-block mob-padding p-contain">
-            <div class="container-fluid container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">Top 6 picks of the week</h3>
-                </div>
-                <div class="latest-collection-row">
-                    <div class="row carousel2" id="top-picks">
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/top1.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/top2.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/top3.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/top4.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/top5.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/top6.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
 
         <section class="sub-banner section-block p-contain">
             <div class="container-fluid">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
+                <div class="heading-txt d-flex align-items-center justify-content-between mb-20 text-left">
                     <h3 class="fw-700 text-uppercase"></h3>
+                    <a href="login.html" class="see_all">See All</a>
                 </div>
                 <div class="row owl-carousel" id="sub-banner">
                     <div class="col-md-sm">
@@ -2277,16 +1318,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="heading-txt d-flex align-items-center justify-content-center mt-10 text-left">
-                    <a href="#" class="see_all">Explore All</a>
-                </div>
             </div>
         </section>
 
         <section class="trends-items mob-padding section-block p-contain pt-0">
-            <div class="container-fluid container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
+            <div class="container-fluid">
+                <div class="heading-txt d-flex align-items-center justify-content-between mb-20 text-left">
                     <h3 class="fw-700 text-uppercase">Trends</h3>
+                    <a href="" class="see_all">See All</a>
                 </div>
                 <div class="post-row">
                     <div class="row carousel1" id="trends">
@@ -2329,51 +1368,6 @@
                         <div class="col-md-4">
                             <div class="trends-item-box round-corner">
                                 <img src="images/t1.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="heading-txt d-flex align-items-center justify-content-center mt-10 text-left">
-                    <a href="#" class="see_all">Explore All</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="latest-collection section-block mob-padding p-contain">
-            <div class="container-fluid container-wrapper">
-                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">Community voice</h3>
-                </div>
-                <div class="latest-collection-row">
-                    <div class="row carousel2" id="testimonial">
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/testimonial.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/testimonial.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/testimonial.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/testimonial.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/testimonial.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4">
-                            <div class="Latest-item">
-                                <img src="images/testimonial.webp" class="img-fluid" alt="">
                             </div>
                         </div>
                     </div>

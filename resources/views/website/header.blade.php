@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>E-Commerce Website</title>
+    <title>Online Fashion Shopping for Men, Women, Accessories - DeLuneh.com</title>
      <meta charSet="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/custom.css">

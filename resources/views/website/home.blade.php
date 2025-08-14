@@ -288,7 +288,7 @@
 
     <div class="main-header stricky-fixed">
         <header>
-            <section class="header-strip">
+            <section class="header-strip d-none d-lg-block">
                 <div class="row-style">
                     <div class="col-md-12 text-end">
                         <a href="#" class="strip-text">Contact Us</a>
@@ -306,10 +306,10 @@
             </section>
 
             <div class="container">
-                <div class="header-nav d-flex font align-items-center justify-content-between mt-10">
-                    <div class="d-flex font align-items-center justify-content-between gap-40">
-                        <div class="header-nav-middle hide-mobile">
-                            <ul class="d-flex align-items-center select-part-desk hide-mobile">
+                <div class="header-nav d-flex d-none d-lg-flex font align-items-center justify-content-between flex-nowrap w-100 mt-10">
+                    <div class="d-flex align-items-center gap-40 flex-grow-1">
+                        <div class="header-nav-middle">
+                            <ul class="d-flex align-items-center select-part-desk">
                                 <li><a href="#">WOMEN</a></li>
                                 <li><a href="#">MEN</a></li>
                                 <li><a href="#">KIDS</a></li>
@@ -331,9 +331,10 @@
                             </div>
                             <a href="#"><span class="logo-font">DE LUNEH</span></a>
                         </div>
+
                     </div>
 
-                    <div class="d-flex font align-items-center justify-content-between">
+                    <div class="d-flex align-items-center flex-grow-1 justify-content-end gap-3">
                         <div class="nav-search">
                             <div class="search-box">
                                 <input type="text" class="form-control" placeholder="Search to find your desired products" id="search">
@@ -372,13 +373,68 @@
                         </div>
                     </div>
                 </div>
-                <div class="mobile-search hidden-large">
+
+                <div class="header-nav d-flex d-block d-lg-none font align-items-center justify-content-between mt-10">
+                    <div class="logo">
+                        <div class="menu_sliding_icon">
+                            <img src="{{ asset('images/burger.svg') }}" alt="">
+                        </div>
+                        <a href="#"><span class="logo-font">DL</span></a>
+                    </div>
+                    <div class="header-nav-middle hide-mobile">
+                        <ul class="d-flex align-items-center select-part-desk hide-mobile">
+                            <li><a href="#" class="active-link">Women</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Kids</a></li>
+                        </ul>
+
+                        <div class="dropdown mobile-select-part hidden-large">
+                            <button class="btn  bg-transparent dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Women
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Men</a></li>
+                                <li><a class="dropdown-item" href="#">Kids</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="nav-search">
+                        <div class="search-box">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="icon-search_i"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="right-side-nav d-flex">
+                        <div class="nav-profile-cart d-flex align-items-center">
+                            <div class="profile-cart-icon profile-section-container">
+                                <a href="#">
+                                    <img src="images/search.webp" width="19" alt="">
+                                </a>
+                            </div>
+                            <div class=" profile-cart-icon">
+                                <a href="wishlist.html">
+                                    <img src="images/wishlist1.svg" width="20" alt="">
+                                    <span class="badge-count">3</span>
+                                </a>
+                            </div>
+                            <div class="profile-cart-icon cart-section-container">
+                                <a href="cart.html">
+                                    <img src="images/cart.svg" width="24" alt="">
+                                    <span class="badge-count">6</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="mobile-search hidden-large">
                     <div class="search-box-mobile">
                         <input type="text" class="form-control" placeholder="Search to find your desired product" id="search_mobile">
                         <span class="icon-search_i"><i class="fa-solid fa-magnifying-glass"></i></span>
                         <span class="icon-voice_i"><i class="fa-solid fa-microphone"></i></span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </header>
         <div class="mobile-gender-cat hidden-large">
@@ -392,6 +448,145 @@
         </div>
 
         <nav class="navigation">
+
+            <input type="checkbox" id="drawer-toggle" />
+
+            <label for="drawer-toggle" class="hamburger-btn">
+                <img src="{{ asset('images/burger.svg') }}" alt="">
+            </label>
+
+            <!-- leftsidebar -->
+
+            <div class="drawer">
+                <div class="drawer-header">
+                    <h2>DeLuneh</h2>
+                    <a href="#" class="login-btn">Log In / Register</a>
+                </div>
+                <div class="menu-section">
+                    <!-- Shop by fandom -->
+                    <section class="new-arrivals section-block p-contain mob-padding">
+                        <div class="container-fluid  container-wrapper">
+                            <div class="post-row">
+                                <div class="row carousel1" id="side-new-arrival">
+                                    <div class="col-md-4">
+                                        <a href="product.html">
+                                            <div class="product-post">
+                                                <div class="product-image">
+                                                    <img src="images/spot1.webp" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="product.html">
+                                            <div class="product-post">
+                                                <div class="product-image">
+                                                    <img src="images/spot2.webp" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="product.html">
+                                            <div class="product-post">
+                                                <div class="product-image">
+                                                    <img src="images/spot3.webp" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="product.html">
+                                            <div class="product-post">
+                                                <div class="product-image">
+                                                    <img src="images/spot4.webp" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="product.html">
+                                            <div class="product-post">
+                                                <div class="product-image">
+                                                    <img src="images/spot1.webp" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="product.html">
+                                            <div class="product-post">
+                                                <div class="product-image">
+                                                    <img src="images/spot2.webp" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="product.html">
+                                            <div class="product-post">
+                                                <div class="product-image">
+                                                    <img src="images/spot3.webp" class="img-fluid" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Men -->
+                <div class="menu-section">
+                    <input type="checkbox" id="men-menu" />
+                    <label for="men-menu">MEN</label>
+                    <div class="submenu">
+                        <div class="submenu-item">
+                            <img src="images/denim3.webp" alt="" />
+                            <span>New Arrivals</span>
+                        </div>
+                        <div class="submenu-item">
+                            <img src="images/denim2.webp" alt="" />
+                            <span>T-Shirts</span>
+                        </div>
+                        <div class="submenu-item">
+                            <img src="images/denim3.webp" alt="" />
+                            <span>Shirts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Women -->
+                <div class="menu-section">
+                    <input type="checkbox" id="women-menu" />
+                    <label for="women-menu">WOMEN</label>
+                    <div class="submenu">
+                        <div class="submenu-item">
+                            <img src="images/denim3.webp" alt="" />
+                            <span>Dresses</span>
+                        </div>
+                        <div class="submenu-item">
+                            <img src="images/denim2.webp" alt="" />
+                            <span>Tops</span>
+                        </div>
+                        <div class="submenu-item">
+                            <img src="images/denim3.webp" alt="" />
+                            <span>Jeans</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overlay -->
+            <label for="drawer-toggle" class="overlay"></label>
+            <!-- ends sidebar -->
+            <ul>
+                <li><a href="product.html">Men</a></li>
+                <li><a href="product.html">Women</a></li>
+                <li><a href="product.html">Kids</a></li>
+                <li><a href="product.html">Footwear</a></li>
+                <li><a href="product.html">Bags</a></li>
+            </ul>
             <ul>
                 <li><a href="product.html">Men</a></li>
                 <li>
@@ -545,7 +740,7 @@
 
     <main class="main--wrapper">
 
-        <div class="highlated-sale top-highlated">
+        <div class="highlated-sale top-highlated d-lg-block d-none">
             <div class="container">
                 <div class="row owl-carousel" id="top-carousel-off">
                     <div class="sale-content d-flex align-items-center justify-content-center">
@@ -625,29 +820,52 @@
                 </div>
             </div>
         </div> -->
-        <section class="slider-banner">
+        <section class="slider-banner d-lg-block d-none">
             <div class="banner-wrapper">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide" onclick="location.href='product.html'">
                             <img src="images/banner1.webp" class="img-fluid desktop-slide" alt="">
-                            <img src="images/banner1.webp" class="img-fluid mobile-slide" alt="">
                         </div>
                         <div class="swiper-slide" onclick="location.href='product.html'">
                             <img src="images/banner2.webp" class="img-fluid desktop-slide" alt="">
-                            <img src="images/banner2.webp" class="img-fluid mobile-slide" alt="">
                         </div>
                         <div class="swiper-slide" onclick="location.href='product.html'">
                             <img src="images/b3.jpg" class="img-fluid desktop-slide" alt="">
-                            <img src="images/mb3.jpg" class="img-fluid mobile-slide" alt="">
                         </div>
                         <div class="swiper-slide" onclick="location.href='product.html'">
                             <img src="images/b4.jpg" class="img-fluid desktop-slide" alt="">
-                            <img src="images/mb4.jpg" class="img-fluid mobile-slide" alt="">
                         </div>
 
                     </div>
                     <div class="swiper-pagination" style="display: none;"></div>
+                    <div class="swiper_nav">
+                        <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
+                        <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider-banner d-block d-lg-none">
+            <div class="banner-wrapper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" onclick="location.href='product.html'">
+                            <img src="images/season6.webp" class="img-fluid desktop-slide" alt="">
+                        </div>
+                        <div class="swiper-slide" onclick="location.href='product.html'">
+                            <img src="images/season3.webp" class="img-fluid desktop-slide" alt="">
+                        </div>
+                        <div class="swiper-slide" onclick="location.href='product.html'">
+                            <img src="images/pr6.jpg" class="img-fluid desktop-slide" alt="">
+                        </div>
+                        <div class="swiper-slide" onclick="location.href='product.html'">
+                            <img src="images/bl-mb-4.webp" class="img-fluid desktop-slide" alt="">
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
                     <div class="swiper_nav">
                         <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
                         <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
@@ -754,37 +972,51 @@
             </div>
         </section>
 
-        <section class="categories section-block p-contain pt-30 mob-padding">
-            <div class="container-fluid container-wrapper">
+        <section class="categories-wrap my-3">
+            <div class="container-fluid  container-wrapper">
                 <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
-                    <h3 class="fw-700 text-uppercase">Categories</h3>
+                    <h3 class="fw-700 text-uppercase">DL Categories</h3>
                 </div>
-                <div class="row mt-30">
-                    <div class="col-md-3">
-                        <img src="images/category7.webp" class="card-img-top">
+                <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 lg:gap-2">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/category7.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                    <div class="col-md-3">
-                        <img src="images/category2.webp" class="card-img-top">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/category2.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                    <div class="col-md-3">
-                        <img src="images/category3.webp" class="card-img-top">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/category3.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                    <div class="col-md-3">
-                        <img src="images/category8.webp" class="card-img-top">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/category8.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <img src="images/category5.webp" class="card-img-top">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/category5.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                    <div class="col-md-3">
-                        <img src="images/category6.webp" class="card-img-top">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/category6.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                    <div class="col-md-3">
-                        <img src="images/category1.webp" class="card-img-top">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/category1.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                    <div class="col-md-3">
-                        <img src="images/category4.webp" class="card-img-top">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/category4.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -912,6 +1144,58 @@
             </div>
         </section>
 
+        <!-- end -->
+
+        <!-- from happenstance -->
+        <section class="categories-wrap my-3">
+            <div class="container-fluid  container-wrapper">
+                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
+                    <h3 class="fw-700 text-uppercase">DL Categories</h3>
+                </div>
+                <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 lg:gap-2">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="https://happenstance.com/storage/media/9Duaum9KJdWiumrnLQT1wtqsOa4YMja9ZkObf0wk.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="https://happenstance.com/storage/media/n8krYhZCh8ZCtIlcVXsuaAaT1zzg2i8gmXtwLni8.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="https://happenstance.com/storage/media/1U9IrhwBoZTFJSYY8C1DDCHH5f37Rq7eVnuyULmb.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="https://happenstance.com/storage/media/MTt2RpcD8JR77MvVffnKdbmJEs525fePzpvffePP.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="https://happenstance.com/storage/media/d78cHM9U9oIhuefSi79tEoXsszSk4wErlK2EMjCZ.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="https://happenstance.com/storage/media/anfrvSP97BpvK4AItP6xUUjiPoMTZZjzyFUoLeWY.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="https://happenstance.com/storage/media/kkj9tR65hLJd2PM86C6zmMdA7SBHVO7onZUuYiw7.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="https://happenstance.com/storage/media/ek75zDkTPS2M8kbzXMK7yhdK7NULdluL5MxBXgZB.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- end -->
 
         <section class="new-arrivals section-block p-contain mob-padding">
@@ -1903,79 +2187,73 @@
             </div>
         </section>
 
-        <section class="latest-collection section-block mob-padding p-contain">
-            <div class="container-fluid container-wrapper">
-                <div class="d-flex heading-txt align-items-center justify-content-center flex-wrap gap-2 mb-20 mt-25">
-                    <h3 class="fw-700 text-uppercase text-center">Categories</h3>
+        <section class="categories-wrap my-3">
+            <div class="container-fluid  container-wrapper">
+                <div class="heading-txt d-flex align-items-center justify-content-center mb-20 text-left">
+                    <h3 class="fw-700 text-uppercase">Categories</h3>
                 </div>
-                <div class="latest-collection-row">
-                    <div class="row mb-20">
-                        <div class="col-md-3 col-lg-3">
-                            <div class="Latest-item">
-                                <img src="images/cat1.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-lg-3">
-                            <div class="Latest-item">
-                                <img src="images/cat2.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-lg-3">
-                            <div class="Latest-item">
-                                <img src="images/cat3.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-lg-3">
-                            <div class="Latest-item">
-                                <img src="images/cat4.webp" class="img-fluid" alt="">
-                            </div>
-                        </div>
+                <div class="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 lg:gap-2">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/cat1.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-            <div class="row mb-20">
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat5.webp" class="img-fluid" alt="">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/cat2.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat6.webp" class="img-fluid" alt="">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/cat3.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat7.webp" class="img-fluid" alt="">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/cat4.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat7.webp" class="img-fluid" alt="">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/cat5.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat9.webp" class="img-fluid" alt="">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/cat6.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat10.webp" class="img-fluid" alt="">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/cat7.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat11.webp" class="img-fluid" alt="">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/cat8.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
-                </div>
-                <div class="col-md-3 col-lg-3">
-                    <div class="Latest-item">
-                        <img src="images/cat12.webp" class="img-fluid" alt="">
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/cat9.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/cat10.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/cat11.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
+                    </div>
+                    <div class="flex justify-center items-center w-full hover:brightness-[.95] transition-all duration-300 ease-out">
+                        <a href="#" class="block w-full">
+                            <img src="images/cat12.webp" alt="Happenstance" width="324" height="271" class="w-full rounded-lg">
+                        </a>
                     </div>
                 </div>
-            </div>
-            </div>
             </div>
         </section>
 

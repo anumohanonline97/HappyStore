@@ -20,7 +20,6 @@
     loop: true,
     autoplay: true,
     speed: 800,
-    dots: true,
     arrows:true,
     effect: 'slide',
     navigation: {
@@ -53,16 +52,16 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     breakpoints: {
       0: {
+        slidesPerView: 1,
+        slidesPerGroup: 1
+      },
+      576: {
         slidesPerView: 2,
         slidesPerGroup: 2
       },
-      576: {
+      768: {
         slidesPerView: 3,
         slidesPerGroup: 3
-      },
-      768: {
-        slidesPerView: 4,
-        slidesPerGroup: 4
       },
       1200: {
         slidesPerView: 5,

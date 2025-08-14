@@ -874,12 +874,13 @@
 	{
 		padding: 0 0px;
 	}
+	
 	header .dropdown-menu li
 	{
 	  padding: 10px 15px !important;
 	  background: #f6f6f6;
-    margin-bottom: 8px;
-    border-radius: 8px;
+	  margin-bottom: 8px;
+	  border-radius: 8px;
 	}
 	.slider-banner
 	{
@@ -1055,11 +1056,11 @@
 	{
 		left: 20px;
 	}
-	.header-nav 
+	/* .header-nav 
 	{
 		display: block !important;
 		padding-bottom: 15px;
-	}
+	} */
 	.header-nav-last
 	{
     border-right: none;
@@ -1127,7 +1128,7 @@
 	  margin-top: 136.8px !important;
 	}
 	.main--wrapper {
-	    margin-top: 193px;
+	    margin-top: 115px;
 	}
 	.checkout_address_change:last-child()
 	{
@@ -1751,20 +1752,20 @@
 	.search-box-mobile input 
 	{
 		min-width: 100%;
-    border-radius: 8px !important;
-    padding: 0px 28px 0px 40px;
-    background: #f3f3f3;
-    border: none;
+		border-radius: 8px !important;
+		padding: 0px 28px 0px 40px;
+		background: #f3f3f3;
+		border: none;
 	}
 	.icon-search_i
 	{
 		left: 20px;
 	}
-	.header-nav 
+	/* .header-nav 
 	{
 		display: block !important;
 		padding-bottom: 15px;
-	}
+	} */
 	.header-nav-last
 	{
 	    border-right: none;
@@ -1785,7 +1786,7 @@
 	}
 	.nav-profile-cart
 	{
-		column-gap: 10px;
+		column-gap: 5px;
 	}
 	.mobile-gender-cat ul 
 	{
